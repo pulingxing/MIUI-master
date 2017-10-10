@@ -1,0 +1,61 @@
+@media screen and (max-width: 760px) {
+	body {
+		padding-top: 0px;
+		width: 100%;
+		overflow-x: hidden;
+	}
+	#footer .options {
+		display: none;
+	}
+	#footer {
+		height: auto;
+		padding: 30px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	body #container {
+		width: 100%;
+	}
+	#reg .form-item {
+		width: 90%;
+		max-width: auto;
+		min-width: auto;
+		margin: 3% 5%;
+	}
+	#reg .form-item #pwd{
+		border-bottom: 1px solid #ccc;
+	}
+	.container .check_code {
+		font-size: 0px;
+		overflow: hidden;
+	}
+	#reg .form-item.check_code {
+		text-align: center;
+		width: 90%;
+		margin: 5% 5%;
+	}
+	.container .check_code>* {
+		font-size: 14px;
+	}
+	.container .check_code input {
+		display: inline-block;
+		width: 50%;
+		float: right;
+	}
+	#reg .check_code a {
+		width: 50%;
+		position: static;
+		display: none;
+		display: inline-block;
+		float: right;
+		overflow: hidden;
+	}
+	.account-page .footer .desc {
+		padding: 0 5%;
+		width: auto;
+		line-height: 1.5;
+		font-size: 14px;
+	}
+}

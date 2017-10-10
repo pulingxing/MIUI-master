@@ -1,0 +1,87 @@
+.top-navbar{
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    font-size: 12px;
+    background: #333;
+}
+
+.navbar-container{
+    width: 1226px;
+    margin:0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.sep{
+    margin: 0.5em;
+    color: #424242;
+}
+
+.navbar{
+    line-height: 40px;
+}
+
+.navbar a{
+    color: #b0b0b0;
+}
+
+/**nav,cart,hover事件**/
+.navbar a:hover{
+    color: #FFFFFF;
+}
+
+.navbar-user a:hover{
+    color: #FFFFFF;
+}
+
+.navbar-cart:hover{
+    background: #FFFFFF;
+}
+
+.navbar-cart:hover .cart-menu{
+    height: 95px;
+    line-height: 95px;
+    display: block;
+    text-align: center;
+}
+
+.navbar-cart{
+    position: relative;
+}
+
+.navbar-cart .cart-menu {
+    width: 316px;
+    height: 0px;
+    position: absolute;
+    right: 0px;
+    display: none;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    transition: all .5s;
+    color: #424242;
+}
+
+.loading{
+    line-height: 95px;
+}
+
+.navbar-cart-user{
+    line-height: 40px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.navbar-cart-user a{
+    color: #b0b0b0
+}
+
+.navbar-cart{
+    margin-left: 50px;
+    padding:0 10px 0 10px;
+    background: #757575;
+}
+

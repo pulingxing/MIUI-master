@@ -1,0 +1,261 @@
+@charset "UTF-8";
+header{
+ 	width: 100%;
+ 	height: 98px;
+ 	/*background: red;*/
+ }
+
+.h_logo{
+ 	width: 1130px;
+ 	height: 98px;
+ 	margin: 0 auto;
+ 	/*background: yellow;*/
+ 	display: flex;
+ 	display: -webkit-flex;
+ 	justify-content: space-between;
+ }
+
+ .logo{
+ 	width: 200px;
+ 	height: 98px;
+ 	background: url("../images/mistore_logo.png");
+ }
+
+section{
+	width: 100%;
+	height: 654px;
+	position: relative;
+	background: url(../images/523923ee3d985386d832e082980e4de9.jpg) no-repeat center;
+}
+
+.wraper{
+ 	width: 1226px;
+ 	height: 654px;
+ 	position: relative;
+ 	margin: 0 auto;	
+ }
+
+ .login-box{
+ 	position: absolute;
+ 	width: 400px;
+ 	height: 442px;
+ 	background: #FFFFFF;
+ 	right: 0;
+ 	top: 140px;
+ }
+
+.nav_tabs_pane{
+    width: 400px;
+    height: 82px;
+    position: absolute;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    right: 0;
+    top:50px;
+    background: #FFFFFF;
+}
+ .nav_tabs_panel{
+ 	width: 400px;
+ 	height: 82px;
+    position: absolute;
+ 	padding-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    right: 0;
+    top:50px;
+    background: #FFFFFF;
+     display: none;
+ }
+
+.line{
+ 	width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0
+}
+
+.navtab-link-1{
+ 	color: #f56600;
+}
+
+.navtab-link-2{
+ 	color: #666;
+}
+.navtab-link-3{
+    color: #666;
+}
+
+.navtab-link-4{
+    color: #f56600;
+}
+
+.navtab-link-2:focus~.qr-login-box{
+    z-index: 100;
+
+}
+.navtab-link-3:focus~.qr-login-box{
+    z-index: -100;
+}
+
+.navtab-link-2:hover{
+    color: #f56600;
+}
+
+.navtab-link-3:hover{
+    color: #f56600;
+}
+
+ .nav_tabs_pane2{
+ 	width: 400px;
+ }
+
+.account, .password,.login-btn{
+ 	display: block;
+ 	margin: 20px auto;
+ 	width: 326px;
+    height: 48px;
+}
+
+.login-btn{
+    line-height: 48px;
+	background: #f56600;
+	text-align: center;
+	font-size: 18px;
+	color: #FFFFFF;
+	border: none;
+}	
+
+
+.n-link-area{
+ 	width: 400px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 4;
+}
+
+.out-link{
+    padding: 0 9px 0 6px;
+    color: #999;
+}
+
+.fie{
+	border: 0;
+}
+
+.fie{
+	border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 70px;
+}
+
+.leg{    
+	font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center
+}
+
+.nav_tabs_pane3{
+ 	width: 250px;
+ 	height: 30px;
+ 	margin: 0 auto;
+}
+
+ .nav_tabs_pane3 a{
+ 	display: inline-block;
+ 	width: 30px;
+ 	height: 30px;
+ 	margin: 0 14px;
+ 	border-radius: 50%;
+ 	text-align: center;
+ 	background: #757575;
+ 	color: #ffffff;
+ }
+
+ .nav_tabs_pane3 i{
+	
+	line-height: 30px;
+ }
+
+ .nav_tabs_pane3 a:nth-child(1):hover{
+ 	background:#0288d1; 
+ }
+
+.nav_tabs_pane3 a:nth-child(2):hover{
+ 	background:#d32f2f; 
+ }
+
+ .nav_tabs_pane3 a:nth-child(3):hover{
+ 	background:#0288d1; 
+ }
+
+ .nav_tabs_pane3 a:nth-child(4):hover{
+ 	background:#00d20d; 
+ }
+
+/****************************扫码登录*****************************/
+.qr-login-box{
+ 	position: absolute;
+ 	width: 400px;
+ 	height: 442px;
+ 	background: #FFFFFF;
+ 	right: 0;
+ 	top: 75px;
+    z-index: -100;
+ }
+
+ .qr-img-con { 
+    position: absolute;
+    top: 109px;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 100;
+    background: url(../images/下载.png) no-repeat center center;
+
+}
+
+.text{
+	display: block;
+    margin: 0 auto;
+    bottom: 140px;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+}
+.text1{
+    display: block;
+    margin: 0 auto;
+    bottom: 120px;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+}
+.qr-login-box span{
+    color: #ff6700;
+}
+
+/****************************页脚************************/
+.login-footer{
+    width: 1226px;
+   
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.login-footer ul{
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+}
+.login-footer li>a{
+    color:#757575; 
+    padding: 0 20px;
+}
+.login-footer p{
+    display: block;
+    text-align: center; 
+}
+
+

@@ -1,0 +1,151 @@
+@charset "UTF-8";
+body {
+	padding-top: 16px;
+}
+
+.container {
+	height: 504px;
+}
+
+.container .logo {
+	margin-top: 0px;
+}
+
+.container .title {
+	margin-top: 50px;
+	height: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.container .form {
+	margin-top: 40px;
+}
+
+.container .form-item {
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 100%;
+	max-width: 330px;
+}
+.form-item:nth-of-type(2){
+	border: none;
+}
+#password{
+	border: 1px solid #ccc;
+}
+
+.container .form-itemL {
+	float: left;
+}
+
+.accounts {
+	position: relative;
+	z-index: 10;
+}
+
+.accounts input:hover {
+	cursor: pointer;
+}
+
+.accounts input:focus~.list li {
+	display: block;
+	height: auto;
+	border-bottom: solid #ccc 1px;
+}
+.warning-info{
+	display: inline-block;
+	color: red;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	/*opacity: 0;*/
+	transition: .5s;
+	font-weight: 600 ;
+}
+
+.phone{
+	border: 1px solid #ccc;
+	z-index: 20;
+}
+.accounts .list {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	border: solid #ccc 1px;
+	margin-left: -1px;
+	border-bottom: none;
+}
+
+.accounts .list li {
+	line-height: 46px;
+	padding: 0 12px;
+	background: #fff;
+	overflow: hidden;
+	height: 0px;
+	transition: all 1s;
+}
+
+.accounts .list li:hover {
+	background: #f6f6f6;
+}
+
+.accounts .list .r {
+	float: right;
+	color: #b0b0b0;
+}
+
+
+/*验证码样式制定*/
+
+.container .check_code {
+	text-indent: 0px;
+	border: none;
+	position: relative;
+}
+
+.container .check_code input {
+	border: solid 1px #ccc;
+	margin-left: -1px;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	max-width: 180px;
+	float: left;
+	text-indent: 15px;
+}
+
+.check_code a {
+	display: block;
+	height: 100%;
+	width: 136px;
+	position: absolute;
+	right: 0px;
+}
+
+.container .form .btn {
+	text-align: center;
+	margin-top: 14px;
+}
+
+.container .desc {
+	text-align: left;
+	color: #9D9D9D;
+	font-size: 10px;
+}
+
+.container .desc a {
+	font-weight: bold;
+	color: #000;
+}
+
+.footer .desc a{
+	color: #333;
+}
+
+
+
