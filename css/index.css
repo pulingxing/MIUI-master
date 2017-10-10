@@ -1470,27 +1470,24 @@ ul.idots-box li.active {
 	margin-top: 40px;
 	position: relative;
 }
+
 h1.title {
 	margin:0;
 	font: normal normal 22px "宋体";
 }
+
 .more{
 	float: right;
 	top: 0px;
 	right: 0px;
 	font-size: 16px;
-
 	position: absolute;
 }
 .more a{
 	color: #333333;
 }
 .more  .iconfont{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #665e57;
-	color: #FFFFFF;
+
 	font-size: 15px;
 }
 

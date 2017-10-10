@@ -1,151 +1,271 @@
-@charset "UTF-8";
-body {
-	padding-top: 16px;
+@charset "utf-8";
+body{
+    font-size: 14px;
+    font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+    background: #f9f9f9;
+    color: #666;
+    position: relative;
+}
+.box{
+    width: 854px;
+    height:1200px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box>div:nth-child(1){
+    width: 786px;
+    margin: 0 auto;
+}
+.log-box{
+    width: 49px;
+    height: 48px;
+    margin: 0 auto 40px auto;
+}
+.log-box>img{
+    width: 100%;
+    height: 100%;
+}
+.title-item{
+    text-align: center;
+}
+.title-item>h4{
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333;
+}
+main{
+    width: 786px;
+    height: 467px;
+}
+.main-box{
+    width: 332px;
+    height: 467px;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
-.container {
-	height: 504px;
+h4{
+    line-height: 20px;
+    padding-bottom: 5px;
+    color: #333;
+    font-weight: normal;
+}
+.select-box{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+    cursor: pointer;
+    zoom: 1;
+    box-sizing: content-box;
+}
+.select-box select{
+    float: left;
+    width: 329px;
+    height: 40px;
+    box-sizing: content-box;
+    border-color: #BBBBBB;
+}
+.select-box>div{
+    float: right;
+    width: 40px;
+    height: 42px;
+    border: 1px solid #BBBBBB;
 }
 
-.container .logo {
-	margin-top: 0px;
+.access{
+    margin:5px 0 15px 0;
+}
+.tel-title{
+    padding: 0;
+}
+.tel-box{
+    height: 42px;
+    zoom: 1;
+    display: flex;
+    margin-bottom: 15px;
+}
+.tel-box select{
+    width: 74px;
+    height: 48px;
+    border-right: none;
+}
+.tel-box div{
+    width: 258px;
+    height: 42px;
+}
+.tel-box div input{
+    width: 100%;
+    height: 42px;
+}
+.request{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+.request>span:nth-child(1){
+    display: flex;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff6700;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin:-1px 5px 0 0 ;
+}
+.request>span:nth-child(2){
+    color: #ff6700;
+    font-size: 13px;
+}
+/*图形验证*/
+.Graphical-verification{
+    width: 450px;
+    height: 40px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.Graphical-verification input{
+    width: 190px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px;
+}
+.Graphical-verification div.Verification{
+    width: 137px;
+    height: 42px;
+    vertical-align: middle;
+    border: 1px solid #BBBBBB;
+    cursor: pointer;
+    text-align: center;
+    line-height: 42px;
+}
+.Verification>span{
+    display: inline-block;
+
+}
+.Graphical-verification input.Land{
+    width: 332px;
+}
+.margin{
+    margin-bottom: 15px;
+}
+.button-box{
+    height: 92px;
+}
+.button-box button{
+    width: 100%;
+    height: 40px;
+    background-color: #ff6700;
+    outline: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.button-box p{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.button-box p>span{
+    color: #333;
+    font-weight: bold;
+}
+/*隐藏提示信息*/
+.place-tel,.request-verification,.request-account,.request-pwd,.request-confirm{
+   opacity: 0;
 }
 
-.container .title {
-	margin-top: 50px;
-	height: auto;
-	margin-bottom: 0px;
-	padding: 0px;
+/*图形验证样式*/
+/*随机字体颜色*/
+.color-12{
+    color: #5f5750;
+    transform:skewX(20deg);
 }
-
-.container .form {
-	margin-top: 40px;
+.color-13{
+    color: #ff6700;
+    transform:skewY(20deg);
 }
-
-.container .form-item {
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	width: 100%;
-	max-width: 330px;
+.color-14{
+    color: #00d20d;
+    transform:skew(20deg,-20deg);
 }
-.form-item:nth-of-type(2){
-	border: none;
+.color-15{
+    color: #ddb321;
+    transform:skewX(30deg);
 }
-#password{
-	border: 1px solid #ccc;
+.color-16{
+    color: #1b4e7c;
+    transform:skewX(50deg);
 }
-
-.container .form-itemL {
-	float: left;
+.color-17{
+    color: #466988;
+    transform:skew(60deg,-60deg);
 }
+.color-18{
+    color: #59758e;
+    transform:skew(90deg);
 
-.accounts {
-	position: relative;
-	z-index: 10;
 }
+.color-19{
+    color: #af3a82;
+    transform:scale(0.5);
 
-.accounts input:hover {
-	cursor: pointer;
 }
-
-.accounts input:focus~.list li {
-	display: block;
-	height: auto;
-	border-bottom: solid #ccc 1px;
+.color-20{
+    color: #152a3c;
+    transform:scale(0.8);
 }
-.warning-info{
-	display: inline-block;
-	color: red;
-	height: 20px;
-	font-size: 14px;
-	text-align: center;
-	/*opacity: 0;*/
-	transition: .5s;
-	font-weight: 600 ;
+.color-21{
+    color: #531b71;
+    transform:scale(1.2);
 }
-
-.phone{
-	border: 1px solid #ccc;
-	z-index: 20;
+.color-22{
+    color: #4d657b;
+    transform:rotateZ(180deg);
 }
-.accounts .list {
-	overflow: hidden;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	width: 100%;
-	border: solid #ccc 1px;
-	margin-left: -1px;
-	border-bottom: none;
+.color-23{
+    color: #394e31;
+    transform:rotateZ(90deg);
 }
-
-.accounts .list li {
-	line-height: 46px;
-	padding: 0 12px;
-	background: #fff;
-	overflow: hidden;
-	height: 0px;
-	transition: all 1s;
+.color-24{
+    color: #285677;
+    transform:rotateZ(45deg);
 }
-
-.accounts .list li:hover {
-	background: #f6f6f6;
+.color-25{
+    color: #59758e;
+    transform:rotateZ(60deg);
 }
-
-.accounts .list .r {
-	float: right;
-	color: #b0b0b0;
+.color-26{
+    color: #0e602a;
+    transform:scale(1.1);
 }
-
-
-/*验证码样式制定*/
-
-.container .check_code {
-	text-indent: 0px;
-	border: none;
-	position: relative;
+.color-27{
+    color: #620883;
+    transform:scale(0.8);
 }
-
-.container .check_code input {
-	border: solid 1px #ccc;
-	margin-left: -1px;
-	box-sizing: border-box;
-	height: 100%;
-	width: 100%;
-	max-width: 180px;
-	float: left;
-	text-indent: 15px;
+.color-28{
+    color: #236c08;
+    transform:scale(0.9);
 }
-
-.check_code a {
-	display: block;
-	height: 100%;
-	width: 136px;
-	position: absolute;
-	right: 0px;
+.color-29{
+    color: #466988;
+    transform:rotateZ(70deg);
 }
-
-.container .form .btn {
-	text-align: center;
-	margin-top: 14px;
+.color-30{
+    color: #1b4e7c;
+    transform:rotateZ(120deg);
 }
-
-.container .desc {
-	text-align: left;
-	color: #9D9D9D;
-	font-size: 10px;
+.color-31{
+    color: #185c3a;
 }
-
-.container .desc a {
-	font-weight: bold;
-	color: #000;
+.color-32{
+    color: #1a4307;
 }
-
-.footer .desc a{
-	color: #333;
+.color-33{
+    color: #6c6c18;
 }
-
-
-

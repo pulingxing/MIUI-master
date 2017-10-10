@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
-	<title>小米账号-登录</title>
-	<link rel="stylesheet" type="text/css" href="css/login.css">
-	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/public.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/media_log.css">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/Login.css">
 </head>
-<body> 
-	<header>
-		<div class="h_logo">
-			<div class="logo"></div>
-		</div>
-	</header>
-
-	<section>
-		<section class="login wraper">
-			<div class="nav_tabs_pane">
-				<a class="navtab-link-1" href="">账号登录</a>
-				<span class="line"></span>
-				<a class="navtab-link-2" href="">扫码登录</a>
-			</div>
-			<div class="login-box">
-
-				<div class="nav_tabs_pane2">
-					<div class="logon-area">
-						<form>
-							<input class="account"  id="account" type="text" name="">
-							<input  class="password" id="password" type="password" name="">
-							<input  class="login-btn" id="login" type="submit" name=""  value="立即登录">
-
-						</form>
-					</div>
-				</div>
-				<!--  -->
-				<div class="n-link-area">
-					<a class="out-link" href="register.html">注册小米账号</a>
-					<span>|</span>
-					<a class="out-link" href="">忘记密码？</a>
-				</div>
-
-				<!-- 其它登录方式 -->
-				<fieldset class="fie">
-					<legend class="leg">其它登录方式</legend>
-				</fieldset>
-				<div class="nav_tabs_pane3">
-					<a class="chil1" href=""><i class="fa fa-qq"></i></a>
-					<a class="chil2" href=""><i class="fa fa-weibo"></i></a>
-					<a class="chil3" href=""><i class="fa fa-qq"></i></a>
-					<a class="chil4" href=""><i class="fa fa-weixin"></i></a>
-				</div>
-			</div>
-			<div class="nav_tabs_panel">
-				<a class="navtab-link-3" href="">账号登录</a>
-				<span class="line"></span>
-				<a class="navtab-link-4" href="">扫码登录</a>
-			</div>
-			<div class="qr-login-box">
-
-				<div class="qr-img-con"></div>
-				<p class="text">使用<span>
-					小米商城APP
-				</span></p>		
-				<p class="text1">扫一扫小米手机可打开「设置」>「小米帐号」扫码登录</p>
-			</div>
-		</section>
-	</section>
-	
-	<footer>
-		<div class="login-footer">
-			<ul class="footer-ul clearfix">
-				<li><a href="">简体</a>|</li>
-				<li><a href="">繁体</a>|</li>
-				<li><a href="">English</a>|</li>
-				<li><a href="">常见问题</a>|</li>			
-			</ul>
-			<p>小米公司版权所有-京ICP备10046444-<a><img src="images/ghs.png"></a>京公网安备11010802020134号-京ICP证110507号</p>
-		</div>
-	</footer>
+<body>
+    <header>
+        <a href="#">
+            <div></div>
+        </a>
+    </header>
+    <main>
+        <div class="main-box">
+            <div class="main-right-box">
+                <!--表单输入登录-->
+                <div class="form-main-box">
+                    <div class="form-main-header">
+                        <a class="accounts">账号登陆</a>
+                        <span></span>
+                        <a id="scan-login">扫码登陆</a>
+                    </div>
+                    <div class="form-main" id="main">
+                        <div>
+                            <div>
+                                <form>
+                                    <div>
+                                        <input type="text" placeholder="邮箱/手机号码/小米ID" class="ID">
+                                        <input type="password" placeholder="密码" class="pwd">
+                                    </div>
+                                    <div class="btn-box">
+                                        <button  type="button" class="obtn">立即登录</button>
+                                    </div>
+                                    <div class="main-footer">
+                                        <a href="#" class="register">注册小米帐号</a>
+                                        <span></span>
+                                        <a href="#">忘记密码?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-right-footer" id="main-footer">
+                        <div>
+                            <span class="hr"></span>
+                            <span>其他方式登录</span>
+                            <span class="hr"></span>
+                        </div>
+                        <div class="payment">
+                            <div>
+                                <a href="#"></a>
+                            </div>
+                            <div>
+                                <a href="#"></a>
+                            </div>
+                            <div>
+                                <a href="#"></a>
+                            </div>
+                            <div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Scan code Login-->
+                    <div class="scan-box">
+                        <div>
+                            <div class="scan">
+                                <img src="images/app.png">
+                            </div>
+                            <div class="scan-footer">
+                                <p>使用&nbsp;<span>小米商城APP</span>&nbsp;扫一扫</p>
+                                <p>小米手机可打开「设置」&nbsp;&gt;&nbsp;「小米帐号」扫码登录</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+         <ul>
+             <li class="language">简体</li>
+             <li class="language">繁体</li>
+             <li class="language">English</li>
+             <li>常见问题</li>
+         </ul>
+        <p>小米公司版权所有-京ICP备10046444-<span><img src="images/ghs.png"> </span>京公网安备11010802020134号-京ICP证110507号</p>
+    </footer>
+<script type="text/javascript" src="js/Login.js"></script>
 </body>
-
-<script type="text/javascript" src="js/log-reg.js"></script>
-<script type="text/javascript" src="js/tools.js"></script>
 </html>

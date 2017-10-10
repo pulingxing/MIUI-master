@@ -1,69 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="format-detection" content="telephone=no">
-	<title>注册</title>
-	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/login_reg.css">
-	<link rel="stylesheet" type="text/css" href="css/register.css">
-	<link rel="stylesheet" type="text/css" href="css/media_reg.css">
-	
-	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/reg.js" type="text/javascript" charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-	<main id="container" class="container">
-		<section class="page account-page" id="reg">
-			<header class="header">
-				<h1 class="logo"><img src="images/milogo.png"></h1>
-				<h2 class="title">小米账号注册</h2>
-			</header>
-			<section class="section form clearFix" id="reg">
-				<form name="" method="" enctype="" id="login"></form>
-				<span class="warning-info"></span>
-				<div class="form-item accounts clearFix">
-					<input class="phone" id="account" type="text" name="username" placeholder="邮箱/手机号码/小米账号"/>
-					<ul class="list">
-						<li class="item"><span class="l">中国</span><span class="r">+86</span></li>
-						<li class="item"><span class="l">中国</span><span class="r">+86</span></li>
-					</ul>
-				</div>
-				<div class="form-item">
-					<input class="pwd" id="password" type="password" name="password" placeholder="密码"><br>
-				</div>
-				<div class="form-item check_code">
-					<input type="text" name="" class="form-itemR" value="" placeholder="图片验证码"/>
-					<div class="request margin request-verification">
-						<span>!</span>
-						<span>请输入正确的图形验证码</span>
-					</div>
-					<a href="" class="form-itemL">
-						<img src="./images/check_code.png">
-					</a>
-				</div>
-				<button class="form-item btn"  id="btn">立即注册</button><br>
-			</section>
-			<footer class="footer">
-				<p class="desc">
-					<span>点击“立即注册”，即表示您同意并愿意遵守小米<a href="">用户协议</a>和<a href="">隐私政策</a> </span>
-				</p>
-			</footer>
-		</section>
-	</main>
-	<footer id="footer">
-		<div class="options">
-			<a href="" class="active">简体</a>
-			<a href="">繁体</a>
-			<a href="">English</a>
-			<a href="">常见问题</a>
-		</div>
-	</footer>
+    <div class="box">
+        <div>
+            <!--logo-->
+            <div class="log-box">
+                <img src="images/logo-footer.png">
+            </div>
+            <!--头部-->
+            <div class="title-item">
+                <h4>注册小米帐号</h4>
+            </div>
+            <!--内容-->
+            <main>
+                <div class="main-box">
+                    <h4>国家/地区</h4>
+                    <form name="Country" method="get">
+                        <div class="select-box clearFloat">
+                            <select class="result">
+                                <optgroup label="常用">
+                                    <option value="0">中国</option>
+                                    <option value="1">中国台湾</option>
+                                    <option value="2">中国香港</option>
+                                    <option value="3">Brazil</option>
+                                    <option value="4">India</option>
+                                    <option value="5">Indonesia</option>
+                                    <option value="6">Malaysia</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <p class="access">成功注册帐号后，国家/地区将不能被修改</p>
+                        <h4 class="tel-title">手机号码</h4>
+                        <div class="tel-box">
+                            <select>
+                                <option>+86</option>
+                            </select>
+                            <div>
+                                <input type="tel" placeholder="请输入手机号码" class="tel">
+                            </div>
+                        </div>
+                            <div class="request place-tel">
+                                <span>!</span>
+                                <span>请输入11位手机号码</span>
+                            </div>
+                            <h4>图形验证码</h4>
+                            <div class="Graphical-verification">
+                                <input type="text" placeholder="图片验证码" class="Verification-input">
+                                <div class="Verification" title="看不清，点击换一张">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="request margin request-verification">
+                                <span>!</span>
+                                <span>请输入正确的图形验证码</span>
+                            </div>
+                        <h4>账号</h4>
+                        <div class="Graphical-verification ">
+                            <input type="text" placeholder="请输入账号" class="Land account-land">
+                        </div>
+                        <div class="request margin request-account">
+                            <span>!</span>
+                            <span>请输入4~16位账号</span>
+                        </div>
+                        <h4>密码</h4>
+                        <div class="Graphical-verification">
+                            <input type="password" placeholder="请输入密码" class="Land pwd">
+                        </div>
+                        <div class="request margin request-pwd">
+                            <span>!</span>
+                            <span>请输入密码</span>
+                        </div>
+                        <h4>确认密码</h4>
+                        <div class="Graphical-verification">
+                            <input type="password" placeholder="请输入密码" class="Land confirm">
+                        </div>
+                        <div class="request margin request-confirm">
+                            <span>!</span>
+                            <span>两次密码不一致</span>
+                        </div>
+                            <div class="button-box">
+                                <button type="button" class="btn">立即注册</button>
+                                <p>注册帐号即表示您同意并愿意遵守小米&nbsp;<span>用户协议</span>和&nbsp;<span>隐私政策</span></p>
+                            </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+<script type="text/javascript" src="js/register.js"></script>
 </body>
-<script type="text/javascript" src="js/log-reg.js"></script>
-<script type="text/javascript" src="js/tools.js"></script>
 </html>
